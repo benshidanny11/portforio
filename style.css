@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 3rem;
+  color: #6070ff;
+}
+
+.header a {
+  margin-left: 5rem;
+  font-size: 16px;
+  text-decoration: none;
+  color: #505f79;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 5rem;
+}
+
+.tabitem a {
+  margin-left: 5rem;
+  font-size: 16px;
+  text-decoration: none;
+  color: #505f79;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-image: url(assets/background.png);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.conentsection {
+  max-width: 60%;
+}
+
+.conentsection h1 {
+  color: #172b4d;
+  font-size: 48px;
+}
+
+.conentsection p {
+  color: #172b4d;
+  font-size: 20px;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+}
+
+.conentsection h5 {
+  text-transform: uppercase;
+  color: #6070ff;
+  font-size: 18px;
+  margin-top: 5rem;
+}
+
+.menubutton {
+  height: 30px;
+  width: 30px;
+  justify-self: center;
+  align-self: center;
+  margin-right: 2rem;
+  display: none;
+}
+
+.tabs-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 650px) {
+  .menubutton {
+    display: block;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .conentsection {
+    max-width: 100%;
+    margin: 2rem;
+  }
+
+  .links {
+    width: 60%;
+  }
+
+  .header a {
+    margin-left: 0;
+  }
+}
