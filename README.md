@@ -1,8 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Portfolio
 
-# Portforio
-
-> The second project in microverse.
+> My personal Portfolio project.
 
 ## Features
 - Home page
@@ -17,8 +15,18 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Clone the project
+- Clone the project
 
-### Navigate to project folder
+- Navigate to project folder
 
-### Right click to home.html file and choose open with chrome.
+- Right click to home.html file and choose open with chrome.
+
+## Authors
+
+👤 **Daniel Urimubenshi**
+
+- GitHub: [@benshidanny11](https://github.com/benshidanny11)
+
+## 🤝 Contributors
+
+- [@benshidanny11](https://github.com/benshidanny11)
