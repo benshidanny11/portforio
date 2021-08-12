@@ -33,21 +33,24 @@
   display: flex;
   flex-direction: column;
   background-image: url(assets/background.png);
-  height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
-.conentsection {
+.aboutmesection {
   max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.conentsection h1 {
+.aboutmesection h1 {
   color: #172b4d;
   font-size: 48px;
 }
 
-.conentsection p {
+.aboutmesection p {
   color: #172b4d;
   font-size: 20px;
 }
@@ -62,9 +65,12 @@
 
 .links {
   display: flex;
-  width: 20%;
+  width: 200px;
   justify-content: space-between;
   list-style-type: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .icons {
@@ -72,11 +78,11 @@
   height: 25px;
 }
 
-.conentsection h5 {
+.aboutmesection h5 {
   text-transform: uppercase;
   color: #6070ff;
   font-size: 18px;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 
 .menubutton {
@@ -92,7 +98,89 @@
   display: flex;
 }
 
-@media only screen and (max-width: 650px) {
+.btn {
+  color: #6070ff;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 0.6rem;
+  border: 1px solid #6070ff;
+  font-size: 16;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+  transition: 1s;
+}
+.mt-4 {
+  height: 4rem;
+}
+
+.mt-3 {
+  height: 3rem;
+}
+
+.content h5 {
+  text-transform: uppercase;
+  color: #6070ff;
+  font-size: 18px;
+  margin-top: 2.5rem;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+  justify-items: center;
+  gap: 5px;
+}
+
+.lan-fra {
+  text-align: center;
+}
+
+.expitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 255px;
+  height: 255px;
+  border-radius: 0.7rem;
+  box-shadow: 0 0 3px rgba(141, 141, 141, 0.774);
+  padding: 0.7rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 820px;
+  list-style-type: none;
+  gap: 0.7rem;
+}
+.listitem {
+  height: 50px;
+  background-color: rgb(247, 247, 247);
+  border: #d4d4d4 1px solid;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.txtcontainer {
+  margin-left: 1rem;
+}
+
+.listitem:hover {
+  background-color: rgb(240, 240, 240);
+  transition: 1s;
+}
+
+.expitem h3 p {
+  color: #172b4d;
+}
+
+@media only screen and (max-width: 720px) {
   .menubutton {
     display: block;
   }
@@ -101,9 +189,18 @@
     display: none;
   }
 
-  .conentsection {
+  .aboutmesection {
     max-width: 100%;
     margin: 2rem;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: start;
+    width: 70%;
+    gap: 1rem;
   }
 
   .links {
@@ -112,5 +209,11 @@
 
   .header a {
     margin-left: 0;
+  }
+
+  .list {
+    width: 255px;
+    margin-block-start: unset;
+    padding-inline-start: unset;
   }
 }
