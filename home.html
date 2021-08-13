@@ -1,76 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Header section-->
-      <header class="header">
-        <a href="#">
-          <h3 class="logo">My logo</h3>
-        </a>
-        <div class="tabs-container">
-          <ul class="tabs">
-            <li class="tabitem"><a href="#">Portfolio</a></li>
-            <li class="tabitem"><a href="#">About</a></li>
-            <li class="tabitem"><a href="#">Contact</a></li>
-          </ul>
-          <nav class="menubutton">
-            <a href="#"><img src="assets/bars-solid.svg" alt="" /></a>
-          </nav>
-        </div>
-      </header>
-      <!-- End header section -->
-      <!-- Content section -->
-      <main class="content">
-        <section class="conentsection">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+  
+    <header class="header">
+      <a href="#">
+        <h3 class="logo">My logo</h3>
+      </a>
+      <div class="tabs-container">
+        <ul class="tabs">
+          <li class="tabitem"><a href="#">Portfolio</a></li>
+          <li class="tabitem"><a href="#">About</a></li>
+          <li class="tabitem"><a href="#">Contact</a></li>
+        </ul>
+        <nav class="menubutton">
+          <a href="#"><img src="assets/bars-solid.svg" alt="" /></a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="inner-intro-container">
+        <div class="introductionsection">
           <h1>
             I'm Daniel<br />
             Grad to see you!
           </h1>
           <p>
             I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hestiate to
-            contact me.
+            or website Look through some of my work and experience! If you
+            like what you see and have a project you need coded, don’t
+            hestiate to contact me.
           </p>
           <h5>Let's connect</h5>
 
-          <ul class="links">
-            <li>
-              <a href="#"
-                ><img src="assets/twitter-brands.svg" alt="" class="icons"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/linkedin-brands.svg" alt="" class="icons" />
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/medium-brands.svg" alt="" class="icons"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/github-brands.svg" alt="" class="icons"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/angellist-brands.svg" alt="" class="icons"
-              /></a>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <!-- End content section -->
-    </div>
-  </body>
+          <div class="linkcontainer">
+            <ul class="links">
+              <li>
+                <a href="#"><img src="assets/twitter-brands.svg" alt="" class="icons" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/linkedin-brands.svg" alt="" class="icons" />
+                </a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/medium-brands.svg" alt="" class="icons" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/github-brands.svg" alt="" class="icons" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/angellist-brands.svg" alt="" class="icons" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+   
+      <section class="innerworkcontainer mt-4">
+        <div class="work project-1">
+          <div class="project">
+            <img src="assets/project1.png" alt="" />
+          </div>
+          <div class="description">
+            <h1>Tonic</h1>
+            <ul class="company">
+              <li class="item item1">
+                <h3>Canopy</h3>
+              </li>
+              <li class="item item2">
+                <h3>Back end dev</h3>
+              </li>
+              <li class="item item2">
+                <h3>2015</h3>
+              </li>
+            </ul>
+
+            <ul class="tools">
+              <li class="item item1">HTML</li>
+              <li class="item item2">CSS</li>
+              <li class="item item2">Javascript</li>
+            </ul>
+
+            <p>
+              A daily selection of privately personalized reads, no accounts
+              or sign up required.
+            </p>
+            
+            <div>
+              <a href="#" class="btn btn-resume mt-4">See the project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="innerworkcontainer mt-4">
+        <div class="work project-1">
+          <div class="description">
+            <h1>Multi-post stories</h1>
+            <ul class="company">
+              <li class="item item1">
+                <h3>Facebook</h3>
+              </li>
+              <li class="item item2">
+                <h3>Full stack dev</h3>
+              </li>
+              <li class="item item2">
+                <h3>2015</h3>
+              </li>
+            </ul>
+
+            <ul class="tools">
+              <li class="item item1">HTML</li>
+              <li class="item item2">Ruby on rails</li>
+              <li class="item item2">CSS</li>
+              <li class="item item2">Javascript</li>
+            </ul>
+
+            <p>
+              Experimental content creation feature that allows users to add
+              to an existing story over the course of a day without spamming
+              their friends.
+            </p>
+            <div>
+              <a href="#" class="btn btn-resume mt-4">See the project</a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="assets/project2.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="innerworkcontainer mt-4">
+        <div class="work project-1">
+          <div class="project">
+            <img src="assets/project3.png" alt="" />
+          </div>
+          <div class="description">
+            <h1>Facebook 360</h1>
+            <ul class="company">
+              <li class="item item1">
+                <h3>Facebook</h3>
+              </li>
+              <li class="item item2">
+                <h3>Full stack dev</h3>
+              </li>
+              <li class="item item2">
+                <h3>2015</h3>
+              </li>
+            </ul>
+
+            <ul class="tools">
+              <li class="item item1">HTML</li>
+              <li class="item item2">CSS</li>
+              <li class="item item2">Javascript</li>
+            </ul>
+
+            <p>
+              Exploring the future of media in Facebook's first Virtual
+              Reality app; a place to discover and enjoy 360 photos and videos
+              on Gear VR.
+            </p>
+
+            <div>
+              <a href="#" class="btn btn-resume mt-4">See the project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="innerworkcontainer mt-4">
+        <div class="work project-1">
+          <div class="description">
+            <h1>Uber Navigation</h1>
+            <ul class="company">
+              <li class="item item1">
+                <h3>Uber</h3>
+              </li>
+              <li class="item item2">
+                <h3>Lead developer</h3>
+              </li>
+              <li class="item item2">
+                <h3>2018</h3>
+              </li>
+            </ul>
+
+            <ul class="tools">
+              <li class="item item1">HTML</li>
+              <li class="item item2">CSS</li>
+              <li class="item item2">Javascript</li>
+            </ul>
+
+            <p>
+              A smart assistant to make driving more safe, efficient, and fun
+              by unlocking your most expensive computer: your car.
+            </p>
+            <div>
+              <a href="#" class="btn btn-resume mt-4">See the project</a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="assets/project4.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="innerworkcontainer mt-4">
+        <div class="aboutme">
+          <section class="description">
+            <div class="me-text">
+              <h1>About my self</h1>
+              <p>
+                I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and
+                experience! If you like what you see and have a project you
+                need coded, don’t hestiate to contact me.
+              </p>
+              <h5>Let's connect</h5>
+
+              <div class="linkcontainer">
+                <ul class="links">
+                  <li>
+                    <a href="#"><img src="assets/twitter-brands.svg" alt="" class="icons" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/linkedin-brands.svg" alt="" class="icons" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/medium-brands.svg" alt="" class="icons" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/github-brands.svg" alt="" class="icons" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/angellist-brands.svg" alt="" class="icons" /></a>
+                  </li>
+                </ul>
+              </div>
+
+             <div class="btn-resume">
+              <a href="#" class="btn ">Get my resume</a>
+             </div>
+            </div>
+          </section>
+          <div class="tools-skills">
+            <ul class="list">
+              <li class="listitem expanded">
+                <div class="txtcontainer">
+                  <h3>Languages</h3>
+                </div>
+                <div class="imgcontainer">
+                  <img src="assets/expand.svg" alt="" width="20" height="20" />
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="grid">
+                  <div class="grid-item">
+                    <div class="imgcontainer1">
+                      <img src="assets/javascriptlogo.png" alt="" width="35" height="35" />
+                    </div>
+                    <div class="txtcontainer">
+                      <p>Java script</p>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="imgcontainer2">
+                      <img src="assets/html5logo.png" alt="" width="35" height="35" />
+                    </div>
+                    <div class="txtcontainer">
+                      <p>HTML</p>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="imgcontainer3">
+                      <img src="assets/csslogo.png" alt="" width="35" height="35" />
+                    </div>
+                    <div class="txtcontainer">
+                      <p>CSS</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="listitem">
+                <div class="txtcontainer">
+                  <h3>Fameworks</h3>
+                </div>
+                <div class="imgcontainer">
+                  <img src="assets/collapse.svg" alt="" width="20" height="20" />
+                </div>
+              </li>
+              <li class="listitem">
+                <div class="txtcontainer">
+                  <h3>Skills</h3>
+                </div>
+                <div class="imgcontainer">
+                  <img src="assets/collapse.svg" alt="" width="20" height="20" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+
 </html>
