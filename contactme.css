@@ -1,14 +1,42 @@
 .contact-container{
-
+    background: #6070FF;
+    height: 779px;
+    background-image: url(./assets/contact\ form\ shapes-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 100% 21px ;
 }
 .contact-container-flex {
     display: flex;
     flex-flow: column wrap;
     margin: auto 24px auto 24px;
+
 }
 
 .contact-me, .if-you{
     align-self: center;
     text-align: center;
 
+}
+
+.input-form {
+    background: #FFFFFF;
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.username, .email {
+    height: 48px;
+}
+
+.textarea {
+    height: 170px;
+}
+
+.submit {
+    width: 43%;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border:none;
 }
