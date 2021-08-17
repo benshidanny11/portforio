@@ -40,6 +40,7 @@
 }
 
 .input-form {
+  font-family: 'poppins','sans-serif';
   background: #ffffff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -52,7 +53,7 @@
   padding: 15;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 20px;
   padding: 15px 38px 16px 15px;
   color: #172B4D;
