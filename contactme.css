@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
 .contact-container {
   background: #6070ff;
   height: 790px;
-  background-image: url(./assets/contact\ form\ shapes-mobile.png), url(./assets/Shape.png);
+  background-image:
+    url(./assets/contact\ form\ shapes-mobile.png),
+    url(./assets/Shape.png);
   background-repeat: no-repeat;
   background-position: 100% 30px, 50% 98%;
-  border-radius: 90px 0px 0px 0px;
+  border-radius: 90px 0 0 0;
   margin-top: 60px;
 }
+
 .contact-container-flex {
   display: flex;
   flex-flow: column wrap;
@@ -16,7 +20,7 @@
 
 .contact-me {
   margin-top: 103px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -40,8 +44,8 @@
 }
 
 .input-form {
-  font-family: 'poppins','sans-serif';
-  background: #ffffff;
+  font-family: "poppins", sans-serif;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -50,14 +54,12 @@
 .username,
 .email {
   height: 28px;
-  padding: 15;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 20px;
   padding: 15px 38px 16px 15px;
-  color: #172B4D;
-
+  color: #172b4d;
 }
 
 .textarea {
@@ -72,8 +74,15 @@
 .submit {
   width: 43%;
   height: 48px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   border: none;
-  
+  color: #6070ff;
+}
+
+.submit:hover {
+  background: #6070ff;
+  color: #fff;
+  transition: 1s;
+  border: #fff 1px solid;
 }
