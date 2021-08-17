@@ -1,0 +1,12 @@
+.contact-container{
+
+}
+.contact-container-flex {
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto 24px auto 24px;
+}
+
+.contact-me, .if-you{
+    align-self: center;
+}
