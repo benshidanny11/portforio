@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 .contact-container {
   background: #6070ff;
-  height: 779px;
-  background-image: url(./assets/contact\ form\ shapes-mobile.png);
+  height: 790px;
+  background-image: url(./assets/contact\ form\ shapes-mobile.png), url(./assets/Shape.png);
   background-repeat: no-repeat;
-  background-position: 100% 21px;
+  background-position: 100% 30px, 50% 98%;
+  border-radius: 90px 0px 0px 0px;
+  margin-top: 60px;
 }
 .contact-container-flex {
   display: flex;
@@ -12,6 +15,8 @@
 }
 
 .contact-me {
+  margin-top: 103px;
+  margin-bottom: 0px;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -26,6 +31,7 @@
 }
 
 .if-you {
+  margin-top: 12px;
   color: #ebebff;
   font-style: normal;
   font-weight: normal;
@@ -42,7 +48,7 @@
 
 .username,
 .email {
-  height: 48px;
+  height: 28px;
   padding: 15;
   font-style: normal;
   font-weight: normal;
