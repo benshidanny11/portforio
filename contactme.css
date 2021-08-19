@@ -2,14 +2,14 @@
 
 .contact-container {
   background: #6070ff;
-  height: 790px;
-  background-image:
-    url(./assets/contact\ form\ shapes-mobile.png),
-    url(./assets/Shape.png);
+
+  background-image:url(./assets/contact\ form\ shapes-mobile.png);
   background-repeat: no-repeat;
   background-position: 100% 30px, 50% 98%;
   border-radius: 90px 0 0 0;
-  margin-top: 60px;
+  margin-top: 5.7rem;
+  padding-bottom: 1rem;
+
 }
 
 .contact-container-flex {
@@ -18,7 +18,9 @@
   margin: auto 24px auto 24px;
 }
 
-.contact-me {
+
+.contact-me-title {
+
   margin-top: 103px;
   margin-bottom: 0;
   font-style: normal;
@@ -27,8 +29,8 @@
   line-height: 52px;
   color: #fff;
 }
+.contact-me-title,
 
-.contact-me,
 .if-you {
   align-self: center;
   text-align: center;
@@ -86,3 +88,44 @@
   transition: 1s;
   border: #fff 1px solid;
 }
+
+.imgcontainer-contact{
+ margin-top: 3.5rem;
+ display: flex;
+ justify-content: center;
+}
+
+@media only screen and (min-width: 720px) {
+
+  .contact-container-flex{
+    background: url(assets/contactformbackground.png);
+  }
+
+  .contact-me-title, .btn-container{
+   margin:2rem 30% 0 30%;
+  }
+
+  .if-you{
+   margin:2rem 28% 0 28%;
+  }
+
+  .input-form{
+    margin:.8rem 30% 0 30%;
+    border-radius: unset;
+  }
+  
+  .textarea{
+    padding: .5rem 0 0 .5rem;
+  }
+
+  .btn-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgcontainer-contact{
+    display: none;
+  }
+
+
+
