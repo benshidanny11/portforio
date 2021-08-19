@@ -68,7 +68,7 @@ body {
   font-size: 48px;
 }
 
-.aboutme h1 {
+.about-me-title {
   color: #172b4d;
   font-size: 48px;
 }
@@ -229,11 +229,14 @@ body {
 
 .aboutme {
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
   border-top-right-radius: 2.5rem;
+}
+
+.aboutme-inner{
   padding: 1.5rem 5rem 1rem 5rem;
   margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .description {
@@ -325,6 +328,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 1rem;
   margin-block-start: unset;
   padding-inline-start: unset;
@@ -415,7 +419,7 @@ body {
     width: 100%;
   }
 
-  .aboutme {
+  .aboutme-inner {
     display: block;
     padding: 1.5rem;
     margin: 1rem;
