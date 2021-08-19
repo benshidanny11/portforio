@@ -2,12 +2,14 @@
 
 .contact-container {
   background: #6070ff;
+
   background-image:url(./assets/contact\ form\ shapes-mobile.png);
   background-repeat: no-repeat;
   background-position: 100% 30px, 50% 98%;
   border-radius: 90px 0 0 0;
   margin-top: 5.7rem;
   padding-bottom: 1rem;
+
 }
 
 .contact-container-flex {
@@ -16,7 +18,9 @@
   margin: auto 24px auto 24px;
 }
 
+
 .contact-me-title {
+
   margin-top: 103px;
   margin-bottom: 0;
   font-style: normal;
@@ -25,8 +29,8 @@
   line-height: 52px;
   color: #fff;
 }
-
 .contact-me-title,
+
 .if-you {
   align-self: center;
   text-align: center;
@@ -122,5 +126,6 @@
   .imgcontainer-contact{
     display: none;
   }
-}
+
+
 
