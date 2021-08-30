@@ -7,6 +7,7 @@
     <title>Daniel's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contactme.css" />
+    <link rel="stylesheet" href="menu.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -26,15 +27,27 @@
 
   <body>
     <div class="container">
+      <nav class="menu-container" id="menu">
+        <div class="img-container">
+          <img src="assets/times-solid.svg" width="27" height="27" alt="" />
+        </div>
+        <menu>
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#portfolio">contact</a></li>
+          </ul>
+        </menu>
+      </nav>
       <header class="header">
         <a href="#">
           <h3 class="logo">My logo</h3>
         </a>
         <div class="tabs-container">
           <ul class="tabs">
-            <li class="tabitem"><a href="#">Portfolio</a></li>
-            <li class="tabitem"><a href="#">About</a></li>
-            <li class="tabitem"><a href="#">Contact</a></li>
+            <li class="tabitem"><a href="#portiforio">Portfolio</a></li>
+            <li class="tabitem"><a href="#about">About</a></li>
+            <li class="tabitem"><a href="#contact">Contact</a></li>
           </ul>
           <nav class="menubutton">
             <a href="#"><img src="assets/bars-solid.svg" alt="" /></a>
@@ -43,7 +56,7 @@
       </header>
 
       <main class="content">
-        <section class="inner-intro-container">
+        <section class="inner-intro-container" id="self-intro">
           <div class="introductionsection">
             <h1>
               I'm Daniel<br />
@@ -104,7 +117,7 @@
             </div>
           </div>
         </section>
-        <section class="innerworkcontainer mt-4">
+        <section class="innerworkcontainer mt-4" id="about">
           <div class="work project-1">
             <div class="project">
               <img src="assets/project1.png" alt="" />
@@ -256,7 +269,7 @@
           </div>
         </section>
 
-        <section class="innerworkcontainer mt-4">
+        <section class="innerworkcontainer mt-4" id="aboutme">
           <div class="aboutme">
             <div class="aboutme-inner">
               <div class="description">
