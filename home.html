@@ -27,17 +27,19 @@
 
   <body>
     <div class="container">
-      <nav class="menu-container" id="menu">
+      <nav class="menu-container show-menu" id="menu-list">
         <div class="img-container">
-          <img src="assets/times-solid.svg" width="27" height="27" alt="" />
+          <a href="#" id="btn-hide">
+            <img src="assets/times-solid.svg" width="27" height="27" alt=""
+          /></a>
         </div>
-        <menu>
+        <div class="menu">
           <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#aboutme">About me</a></li>
-            <li><a href="#portfolio">contact</a></li>
+            <li><a href="#portfolio" id="mnu-port">Portfolio</a></li>
+            <li><a href="#aboutme" id="mnu-about">About me</a></li>
+            <li><a href="#contactme" id="mnu-contact">contact</a></li>
           </ul>
-        </menu>
+        </div>
       </nav>
       <header class="header">
         <a href="#">
@@ -47,10 +49,12 @@
           <ul class="tabs">
             <li class="tabitem"><a href="#portiforio">Portfolio</a></li>
             <li class="tabitem"><a href="#about">About</a></li>
-            <li class="tabitem"><a href="#contact">Contact</a></li>
+            <li class="tabitem"><a href="#contactme">Contact</a></li>
           </ul>
           <nav class="menubutton">
-            <a href="#"><img src="assets/bars-solid.svg" alt="" /></a>
+            <a href="#" id="menu-btn"
+              ><img src="assets/bars-solid.svg" alt=""
+            /></a>
           </nav>
         </div>
       </header>
@@ -421,7 +425,7 @@
                 </ul>
               </div>
             </div>
-            <div class="contact-container">
+            <div class="contact-container" id="contactme">
               <form
                 class="contact-form"
                 action="https://formspree.io/f/xzbykgjg"
@@ -472,5 +476,6 @@
         </section>
       </main>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
