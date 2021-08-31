@@ -19,6 +19,8 @@
 .img-container img {
   float: right;
   padding-right: 35px;
+  width: 36px;
+  height: 26px;
 }
 
 .menu {
