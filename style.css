@@ -244,8 +244,35 @@ body {
   font-weight: bold;
 }
 
+.btn-modal {
+  color: #6070ff;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 0.4rem 1.4rem;
+  border: 1px solid #6070ff;
+  font-size: 9px;
+  font-weight: bold;
+  margin-left: 1.6rem;
+}
+
+#tool1,
+#tool2,
+#tool3 {
+  font-size: 9px;
+}
+
+.btn-modal:hover {
+  color: #fff;
+  background-color: #6070ff;
+  transition: 1s;
+}
+
 .btn-resume {
   margin-top: 1.5rem;
+}
+
+.mtrem-4 {
+  margin-top: 4rem;
 }
 
 .btn:hover {
@@ -268,7 +295,6 @@ body {
   font-size: 18px;
   margin-top: 2.5rem;
 }
-
 
 .project-container {
   display: flex;
@@ -347,6 +373,19 @@ body {
   padding: 3rem;
 }
 
+.work-modal {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+}
+
+.icon-btn {
+  margin-left: 1rem;
+  width: 16px;
+  height: 16px;
+}
+
 .aboutme {
   background-color: #fff;
   border-top-right-radius: 2.5rem;
@@ -393,8 +432,14 @@ body {
   margin-block-end: unset;
 }
 
-.company .item2 h3,.company .item1 h3,.company .item3 h3{
- font-size: 16px;
+.listitem h3 {
+  color: #172b4d;
+}
+
+.company .item2 h3,
+.company .item1 h3,
+.company .item3 h3 {
+  font-size: 16px;
 }
 
 .item-mar-left {
@@ -476,13 +521,26 @@ body {
   margin-top: 0;
 }
 
-.listitem h3 {
-  color: #172b4d;
-}
-
 .me-text {
   display: flex;
   flex-direction: column;
+}
+
+.project-modal img {
+  width: 100%;
+  height: 500px;
+}
+
+#detail1,
+#detail2,
+#detali3 {
+  font-size: 15px;
+}
+
+.separator {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: none;
 }
 
 @media only screen and (max-width: 720px) {
@@ -615,5 +673,17 @@ body {
 
   .tools .item {
     font-size: 12px;
+  }
+
+  .ds-block {
+    display: block;
+  }
+
+  .col-fil {
+    width: 100%;
+  }
+
+  .separator {
+    display: block;
   }
 }

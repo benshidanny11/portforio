@@ -3,7 +3,6 @@ document.getElementById('menu-btn').addEventListener('click', function () {
   menuList.classList.remove('show-menu');
 });
 var menus = document.getElementsByClassName('hide-menu');
-console.log(menus);
 var menuarray = Array.prototype.map.call(menus, function (element) {
   return element;
 });
@@ -147,10 +146,32 @@ projects.forEach((project) => {
   projectDetailsButton.setAttribute('data-bs-toggle', 'modal');
   projectDetailsButton.setAttribute('data-bs-target', '#exampleModal');
   projectDetailsButton.setAttribute('data-project-name', project.name);
+  projectDetailsButton.setAttribute('data-project-description',project.description);
+  projectDetailsButton.setAttribute('data-project-img',project.featuredImage);
+  projectDetailsButton.setAttribute('data-detail-1',project.projectScope[0]);
+  projectDetailsButton.setAttribute('data-detail-2',project.projectScope[1]);
+  projectDetailsButton.setAttribute('data-detail-3',project.projectScope[2]);
+  projectDetailsButton.setAttribute('data-tool-1',project.projectScope[0]);
+  projectDetailsButton.setAttribute('data-tool-2',project.projectScope[1]);
+  projectDetailsButton.setAttribute('data-tool-3',project.projectScope[2]);
+  projectDetailsButton.setAttribute('data-project-live-link',project.liveLink);
+  projectDetailsButton.setAttribute('data-project-code-link',project.codeLink);
+
   projectDetailsButton.addEventListener('click', function () {
     // console.log(projectDetailsButton.getAttribute('data-project-name'));
     document.getElementById('exampleModalToggleLabel2').innerHTML =
-      projectDetailsButton.getAttribute('data-project-name');
+    projectDetailsButton.getAttribute('data-project-name');
+    document.getElementById("detail1").innerHTML=projectDetailsButton.getAttribute('data-detail-1');
+    document.getElementById("detail2").innerHTML=projectDetailsButton.getAttribute('data-detail-2');
+    document.getElementById("detail3").innerHTML=projectDetailsButton.getAttribute('data-detail-3');
+
+    document.getElementById("tool1").innerHTML=projectDetailsButton.getAttribute('data-tool-1');
+    document.getElementById("tool2").innerHTML=projectDetailsButton.getAttribute('data-tool-2');
+    document.getElementById("tool3").innerHTML=projectDetailsButton.getAttribute('data-tool-3');
+    document.getElementById('img-project').setAttribute('src',projectDetailsButton.getAttribute('data-project-img'));
+    document.getElementById('project-description').innerHTML=projectDetailsButton.getAttribute('data-project-description');
+    document.getElementById('livebtn').setAttribute('href',projectDetailsButton.getAttribute('data-project-live-link'));
+    document.getElementById('codebtn').setAttribute('href',projectDetailsButton.getAttribute('data-project-code-link'));
   });
 
   descriptionDiv.appendChild(titleH1);

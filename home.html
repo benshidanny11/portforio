@@ -26,9 +26,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'G-F4FJEBTXJL');
+      gtag("config", "G-F4FJEBTXJL");
     </script>
   </head>
 
@@ -138,10 +138,24 @@
           aria-labelledby="exampleModalToggleLabel2"
           tabindex="-1"
         >
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
+                <div class="modal-title">
+                  <h1 class="modal-title" id="exampleModalToggleLabel2"></h1>
+                  <ul class="company">
+                    <li class="item item1">
+                      <h3 id="detail1"></h3>
+                    </li>
+                    <li class="item item2">
+                      <h3 id="detail2"></h3>
+                    </li>
+                    <li class="item item2">
+                      <h3 id="detail3"></h3>
+                    </li>
+                  </ul>
+                </div>
+
                 <button
                   type="button"
                   class="btn-close"
@@ -150,17 +164,49 @@
                 ></button>
               </div>
               <div class="modal-body">
-                Hide this modal and show the first with the button below.
-              </div>
-              <div class="modal-footer">
-                <button
-                  class="btn btn-primary"
-                  data-bs-target="#exampleModalToggle"
-                  data-bs-toggle="modal"
-                  data-bs-dismiss="modal"
-                >
-                  Back to first
-                </button>
+                <div class="work-modal">
+                  <div class="project-modal">
+                    <img id="img-project" alt="" src="assets/project1.png" />
+                  </div>
+                  <div class="row mt-4 ds-block">
+                    <div class="col-7 col-fil">
+                      <p id="project-description"></p>
+                    </div>
+
+                    <div class="col-5 col-fil">
+                      <ul class="tools">
+                        <li class="item item1" id="tool1"></li>
+                        <li class="item item2" id="tool2"></li>
+                        <li class="item item2" id="tool3"></li>
+                      </ul>
+                      <hr class="separator" />
+
+                      <div class="d-flex mt-4">
+                        <a
+                          class="btn-modal"
+                          id="livebtn"
+                          target="blank"
+                          href="#"
+                          >See live
+                          <img
+                            src="assets/live-icon.png"
+                            alt=""
+                            class="icon-btn" /></a
+                        ><a
+                          href="#"
+                          class="btn-modal"
+                          id="codebtn"
+                          target="blank"
+                          >See code
+                          <img
+                            src="assets/git-icon.png"
+                            alt=""
+                            class="icon-btn"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -372,11 +418,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
