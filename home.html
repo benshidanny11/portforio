@@ -7,6 +7,7 @@
     <title>Daniel's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contactme.css" />
+    <link rel="stylesheet" href="menu.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -26,24 +27,40 @@
 
   <body>
     <div class="container">
+      <nav class="menu-container show-menu" id="menu-list">
+        <div class="img-container">
+          <a href="#" class="hide-menu">
+            <img src="assets/times-solid.svg" width="27" height="27" alt=""
+          /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#portfolio"  class="hide-menu">Portfolio</a></li>
+            <li><a href="#aboutme"  class="hide-menu">About me</a></li>
+            <li><a href="#contactme" class="hide-menu">contact</a></li>
+          </ul>
+        </div>
+      </nav>
       <header class="header">
         <a href="#">
           <h3 class="logo">My logo</h3>
         </a>
         <div class="tabs-container">
           <ul class="tabs">
-            <li class="tabitem"><a href="#">Portfolio</a></li>
-            <li class="tabitem"><a href="#">About</a></li>
-            <li class="tabitem"><a href="#">Contact</a></li>
+            <li class="tabitem"><a href="#portiforio">Portfolio</a></li>
+            <li class="tabitem"><a href="#about">About</a></li>
+            <li class="tabitem"><a href="#contactme">Contact</a></li>
           </ul>
           <nav class="menubutton">
-            <a href="#"><img src="assets/bars-solid.svg" alt="" /></a>
+            <a href="#" id="menu-btn"
+              ><img src="assets/bars-solid.svg" alt=""
+            /></a>
           </nav>
         </div>
       </header>
 
       <main class="content">
-        <section class="inner-intro-container">
+        <section class="inner-intro-container" id="self-intro">
           <div class="introductionsection">
             <h1>
               I'm Daniel<br />
@@ -104,7 +121,7 @@
             </div>
           </div>
         </section>
-        <section class="innerworkcontainer mt-4">
+        <section class="innerworkcontainer mt-4" id="about">
           <div class="work project-1">
             <div class="project">
               <img src="assets/project1.png" alt="" />
@@ -256,7 +273,7 @@
           </div>
         </section>
 
-        <section class="innerworkcontainer mt-4">
+        <section class="innerworkcontainer mt-4" id="aboutme">
           <div class="aboutme">
             <div class="aboutme-inner">
               <div class="description">
@@ -408,7 +425,7 @@
                 </ul>
               </div>
             </div>
-            <div class="contact-container">
+            <div class="contact-container" id="contactme">
               <form
                 class="contact-form"
                 action="https://formspree.io/f/xzbykgjg"
@@ -459,5 +476,6 @@
         </section>
       </main>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
