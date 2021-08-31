@@ -269,6 +269,13 @@ body {
   margin-top: 2.5rem;
 }
 
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .experience {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -368,6 +375,7 @@ body {
   display: flex;
   margin-block-start: unset;
   padding-inline-start: unset;
+  justify-content: space-around;
 }
 
 .company .item1 {
@@ -383,6 +391,14 @@ body {
   margin-left: 2rem;
   margin-block-start: unset;
   margin-block-end: unset;
+}
+
+.company .item2 h3,.company .item1 h3,.company .item3 h3{
+ font-size: 16px;
+}
+
+.item-mar-left {
+  margin-left: 1.5rem;
 }
 
 .tools {
