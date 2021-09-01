@@ -148,7 +148,7 @@ projects.forEach((project) => {
   projectDetailsButton.setAttribute('data-project-name', project.name);
   projectDetailsButton.setAttribute(
     'data-project-description',
-    project.description,
+    project.description
   );
   projectDetailsButton.setAttribute('data-project-img', project.featuredImage);
   projectDetailsButton.setAttribute('data-detail-1', project.projectScope[0]);
@@ -162,32 +162,40 @@ projects.forEach((project) => {
 
   projectDetailsButton.addEventListener('click', () => {
     // console.log(projectDetailsButton.getAttribute('data-project-name'));
-    document.getElementById('exampleModalToggleLabel2').innerHTML = projectDetailsButton.getAttribute('data-project-name');
-    document.getElementById('detail1').innerHTML = projectDetailsButton.getAttribute('data-detail-1');
-    document.getElementById('detail2').innerHTML = projectDetailsButton.getAttribute('data-detail-2');
-    document.getElementById('detail3').innerHTML = projectDetailsButton.getAttribute('data-detail-3');
+    document.getElementById('exampleModalToggleLabel2').innerHTML =
+      projectDetailsButton.getAttribute('data-project-name');
+    document.getElementById('detail1').innerHTML =
+      projectDetailsButton.getAttribute('data-detail-1');
+    document.getElementById('detail2').innerHTML =
+      projectDetailsButton.getAttribute('data-detail-2');
+    document.getElementById('detail3').innerHTML =
+      projectDetailsButton.getAttribute('data-detail-3');
 
-    document.getElementById('tool1').innerHTML = projectDetailsButton.getAttribute('data-tool-1');
-    document.getElementById('tool2').innerHTML = projectDetailsButton.getAttribute('data-tool-2');
-    document.getElementById('tool3').innerHTML = projectDetailsButton.getAttribute('data-tool-3');
+    document.getElementById('tool1').innerHTML =
+      projectDetailsButton.getAttribute('data-tool-1');
+    document.getElementById('tool2').innerHTML =
+      projectDetailsButton.getAttribute('data-tool-2');
+    document.getElementById('tool3').innerHTML =
+      projectDetailsButton.getAttribute('data-tool-3');
     document
       .getElementById('img-project')
       .setAttribute(
         'src',
-        projectDetailsButton.getAttribute('data-project-img'),
+        projectDetailsButton.getAttribute('data-project-img')
       );
-    document.getElementById('project-description').innerHTML = projectDetailsButton.getAttribute('data-project-description');
+    document.getElementById('project-description').innerHTML =
+      projectDetailsButton.getAttribute('data-project-description');
     document
       .getElementById('livebtn')
       .setAttribute(
         'href',
-        projectDetailsButton.getAttribute('data-project-live-link'),
+        projectDetailsButton.getAttribute('data-project-live-link')
       );
     document
       .getElementById('codebtn')
       .setAttribute(
         'href',
-        projectDetailsButton.getAttribute('data-project-code-link'),
+        projectDetailsButton.getAttribute('data-project-code-link')
       );
   });
 
