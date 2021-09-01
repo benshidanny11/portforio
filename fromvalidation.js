@@ -1,18 +1,13 @@
 const contactMe = document.getElementById('contactme-form');
 
 function isLowerCase(str) {
-  return !/[a-z]/.test(str) && /[A-Z]/.test(str);
+  return !/[A-Z]/.test(str);
 }
 
 contactMe.addEventListener('submit', (e) => {
   e.preventDefault();
-
-  const fullname = document.getElementById('name');
   const email = document.getElementById('email').value;
-  const message = document.getElementById('message');
   const displayErrorMessge = document.getElementById('validate-message');
-  //   console.log(email)
-
   if (isLowerCase(email)) {
     contactMe.submit();
   } else {

@@ -68,10 +68,10 @@
   font-weight: 700;
   margin-left: 1rem;
   align-self: center;
-  color: rgb(250, 73, 73);
+  color: rgb(255, 163, 163);
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 940px) {
   .menu-container {
     width: 0;
     height: 0;
