@@ -11,6 +11,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container-main {
+  min-height: 100vh;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -543,7 +547,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 940px) {
   .menubutton {
     display: block;
   }
