@@ -369,6 +369,7 @@
                 class="contact-form"
                 action="https://formspree.io/f/xzbykgjg"
                 method="POST"
+                id="contactme-form"
               >
                 <div class="contact-container-flex">
                   <h1 class="contact-me-title">Contact me</h1>
@@ -383,14 +384,14 @@
                     placeholder="Pick a name..."
                     type="text"
                     name="fullname"
-                    required
+                    id="name"
                   />
                   <input
                     class="input-form email"
                     type="email"
                     placeholder="Email"
                     name="emailaddress"
-                    required
+                    id="email"
                   />
                   <textarea
                     class="input-form textarea"
@@ -398,12 +399,13 @@
                     minlength="10"
                     name="message"
                     placeholder="Write your message here..."
-                    required
+                    id="message"
                   ></textarea>
                   <div class="btn-container">
-                    <button class="submit" type="submit" name="submit">
+                    <button class="submit" type="submit" name="btnsubmit">
                       Get In Touch
                     </button>
+                    <p class="p-validate-message " id="validate-message"></p>
                   </div>
                 </div>
               </form>
@@ -421,5 +423,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+    <script src="fromvalidation.js"></script>
   </body>
 </html>
