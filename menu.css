@@ -9,7 +9,7 @@
   z-index: 10;
   opacity: 0.9;
   background-color: #6070ff;
-  padding-top: 30px;
+  padding-top: 0.6rem;
 }
 
 .mg-container {
@@ -19,6 +19,7 @@
 .img-container img {
   float: right;
   padding-right: 35px;
+  height: 30px;
 }
 
 .menu {
@@ -51,4 +52,11 @@
 
 .show-menu {
   display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .menu-container {
+    width: 0;
+    height: 0;
+  }
 }
