@@ -93,6 +93,7 @@ projects.forEach((project) => {
   companyDelailsItem1.classList.add(...['item', 'item1']);
 
   const companyDelailsItem1H3 = document.createElement('h3');
+  // eslint-disable-next-line prefer-destructuring
   companyDelailsItem1H3.innerHTML = project.projectScope[0];
   companyDelailsItem1.appendChild(companyDelailsItem1H3);
 
@@ -100,6 +101,7 @@ projects.forEach((project) => {
   companyDelailsItem2.classList.add(...['item', 'item2']);
 
   const companyDelailsItem2H3 = document.createElement('h3');
+  // eslint-disable-next-line prefer-destructuring
   companyDelailsItem2H3.innerHTML = project.projectScope[1];
   companyDelailsItem2.appendChild(companyDelailsItem2H3);
 
@@ -107,6 +109,7 @@ projects.forEach((project) => {
   companyDelailsItem3.classList.add(...['item', 'item3', 'item-mar-left']);
 
   const companyDelailsItem3H3 = document.createElement('h3');
+  // eslint-disable-next-line prefer-destructuring
   companyDelailsItem3H3.innerHTML = project.projectScope[2];
   companyDelailsItem3.appendChild(companyDelailsItem3H3);
 
@@ -119,14 +122,17 @@ projects.forEach((project) => {
 
   const toolsItem1 = document.createElement('li');
   toolsItem1.classList.add(...['item', 'item1']);
+  // eslint-disable-next-line prefer-destructuring
   toolsItem1.innerHTML = project.technologies[0];
 
   const toolsItem2 = document.createElement('li');
   toolsItem2.classList.add(...['item', 'item2']);
+  // eslint-disable-next-line prefer-destructuring
   toolsItem2.innerHTML = project.technologies[1];
 
   const toolsItem3 = document.createElement('li');
   toolsItem3.classList.add(...['item', 'item1', 'item-mar-left']);
+  // eslint-disable-next-line prefer-destructuring
   toolsItem3.innerHTML = project.technologies[2];
 
   toolsList.appendChild(toolsItem1);
@@ -147,8 +153,7 @@ projects.forEach((project) => {
   projectDetailsButton.setAttribute('data-bs-target', '#exampleModal');
   projectDetailsButton.setAttribute('data-project-name', project.name);
   projectDetailsButton.setAttribute(
-    'data-project-description',
-    project.description
+    'data-project-description', project.description,
   );
   projectDetailsButton.setAttribute('data-project-img', project.featuredImage);
   projectDetailsButton.setAttribute('data-detail-1', project.projectScope[0]);
@@ -161,41 +166,28 @@ projects.forEach((project) => {
   projectDetailsButton.setAttribute('data-project-code-link', project.codeLink);
 
   projectDetailsButton.addEventListener('click', () => {
-    // console.log(projectDetailsButton.getAttribute('data-project-name'));
-    document.getElementById('exampleModalToggleLabel2').innerHTML =
-      projectDetailsButton.getAttribute('data-project-name');
-    document.getElementById('detail1').innerHTML =
-      projectDetailsButton.getAttribute('data-detail-1');
-    document.getElementById('detail2').innerHTML =
-      projectDetailsButton.getAttribute('data-detail-2');
-    document.getElementById('detail3').innerHTML =
-      projectDetailsButton.getAttribute('data-detail-3');
+    document.getElementById('exampleModalToggleLabel2').innerHTML = projectDetailsButton.getAttribute('data-project-name');
+    document.getElementById('detail1').innerHTML = projectDetailsButton.getAttribute('data-detail-1');
+    document.getElementById('detail2').innerHTML = projectDetailsButton.getAttribute('data-detail-2');
+    document.getElementById('detail3').innerHTML = projectDetailsButton.getAttribute('data-detail-3');
 
-    document.getElementById('tool1').innerHTML =
-      projectDetailsButton.getAttribute('data-tool-1');
-    document.getElementById('tool2').innerHTML =
-      projectDetailsButton.getAttribute('data-tool-2');
-    document.getElementById('tool3').innerHTML =
-      projectDetailsButton.getAttribute('data-tool-3');
+    document.getElementById('tool1').innerHTML = projectDetailsButton.getAttribute('data-tool-1');
+    document.getElementById('tool2').innerHTML = projectDetailsButton.getAttribute('data-tool-2');
+    document.getElementById('tool3').innerHTML = projectDetailsButton.getAttribute('data-tool-3');
     document
       .getElementById('img-project')
       .setAttribute(
-        'src',
-        projectDetailsButton.getAttribute('data-project-img')
+        'src', projectDetailsButton.getAttribute('data-project-img'),
       );
-    document.getElementById('project-description').innerHTML =
-      projectDetailsButton.getAttribute('data-project-description');
-    document
-      .getElementById('livebtn')
-      .setAttribute(
-        'href',
-        projectDetailsButton.getAttribute('data-project-live-link')
-      );
+    document.getElementById('project-description').innerHTML = projectDetailsButton.getAttribute('data-project-description');
+    document.getElementById('livebtn').setAttribute(
+      'href',
+      projectDetailsButton.getAttribute('data-project-live-link'),
+    );
     document
       .getElementById('codebtn')
       .setAttribute(
-        'href',
-        projectDetailsButton.getAttribute('data-project-code-link')
+        'href', projectDetailsButton.getAttribute('data-project-code-link'),
       );
   });
 
