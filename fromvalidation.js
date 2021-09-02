@@ -19,3 +19,12 @@ contactMe.addEventListener('submit', (e) => {
     displayErrorMessge.innerHTML = `Email address should be in lower case, try to re-enter email like this : ${email.toLowerCase()}`;
   }
 });
+
+window.addEventListener('load', () => {
+  if (localStorage.length > 0) {
+  const userData = JSON.parse(localStorage.getItem('userData'));
+  document.getElementById('email').value = userData.email;
+  document.getElementById('name').value = userData.name;
+  document.getElementById('message').value = userData.message;
+  }
+  });
