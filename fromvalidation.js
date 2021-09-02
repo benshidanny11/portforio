@@ -22,9 +22,9 @@ contactMe.addEventListener('submit', (e) => {
 
 window.addEventListener('load', () => {
   if (localStorage.length > 0) {
-  const userData = JSON.parse(localStorage.getItem('userData'));
-  document.getElementById('email').value = userData.email;
-  document.getElementById('name').value = userData.name;
-  document.getElementById('message').value = userData.message;
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    document.getElementById('email').value = userData.email;
+    document.getElementById('name').value = userData.name;
+    document.getElementById('message').value = userData.message;
   }
-  });
+});
