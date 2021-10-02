@@ -15,52 +15,52 @@ menuarray.forEach((element) => {
 
 const projects = [
   {
-    name: 'Tonic',
-    featuredImage: 'assets/project1.png',
+    name: 'Salax award event',
+    featuredImage: 'assets/salax.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet ab fugiat et tempora commodi libero obcaecati odio consequuntur ex id voluptate ratione dolores similique ad aspernatur, officia, beatae doloribus repellendus laboriosam voluptatibus maxime. Dolorum exercitationem in enim alias praesentium iure unde inventore! Cumque debitis quo similique, accusantium hic suscipit?',
     technologies: ['HTML', 'CSS', 'Javascript'],
-    projectScope: ['Canopy', 'Back end dev', '2015'],
+    projectScope: ['Microverse Student', 'Full stack developer', '2021'],
     projectSumary:
-      '    Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    liveLink: 'https://benshidanny11.github.io/portforio/home.html',
-    codeLink: 'https://github.com/benshidanny11/portforio',
+      'Historical Salax Awards Series in Rwanda Showbiz since August 2008 organised by Ikirezi Group Ltd is now back to bring happiness again!',
+    liveLink: 'https://benshidanny11.github.io/consert_page/',
+    codeLink: 'https://github.com/benshidanny11/consert_page',
   },
   {
-    name: 'Multi-post stories',
-    featuredImage: 'assets/project2.png',
+    name: 'School MIS',
+    featuredImage: 'assets/schoolmis.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet ab fugiat et tempora commodi libero obcaecati odio consequuntur ex id voluptate ratione dolores similique ad aspernatur, officia, beatae doloribus repellendus laboriosam voluptatibus maxime. Dolorum exercitationem in enim alias praesentium iure unde inventore! Cumque debitis quo similique, accusantium hic suscipit?',
     projectSumary:
       ' A daily selection of privately personalized reads, no accounts or sign up required.',
-    technologies: ['HTML', 'Ruby', 'CSS', 'Javascript'],
-    projectScope: ['Facebook', 'Full stack dev', '2015'],
-    liveLink: 'https://benshidanny11.github.io/portforio/home.html',
-    codeLink: 'https://github.com/benshidanny11/portforio',
+    technologies: ['Node js', 'CSS', 'React js'],
+    projectScope: ['Primary', 'Full stack dev', '2015'],
+    liveLink: 'https://schoolmis.herokuapp.com/',
+    codeLink: 'https://github.com/benshidanny11/primarymisfrontend',
   },
   {
-    name: 'Facebook 360',
-    featuredImage: 'assets/project3.png',
+    name: 'Covid tracker',
+    featuredImage: 'assets/covid.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet ab fugiat et tempora commodi libero obcaecati odio consequuntur ex id voluptate ratione dolores similique ad aspernatur, officia, beatae doloribus repellendus laboriosam voluptatibus maxime. Dolorum exercitationem in enim alias praesentium iure unde inventore! Cumque debitis quo similique, accusantium hic suscipit?',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    projectScope: ['Facebook', 'Full stack dev', '2015'],
+    technologies: ['React js', 'CSS', 'Javascript'],
+    projectScope: ['Freelancer', 'Full stack dev', '2020'],
     projectSumary:
       '    Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    liveLink: 'https://benshidanny11.github.io/portforio/home.html',
-    codeLink: 'https://github.com/benshidanny11/portforio',
+    liveLink: 'https://covid-tracker-by-dannybenshi.herokuapp.com/Rwanda',
+    codeLink: 'https://github.com/benshidanny11/covid-tracker/security/dependabot',
   },
   {
-    name: 'Uber Navigation',
-    featuredImage: 'assets/project4.png',
+    name: 'Todo list',
+    featuredImage: 'assets/todo.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet ab fugiat et tempora commodi libero obcaecati odio consequuntur ex id voluptate ratione dolores similique ad aspernatur, officia, beatae doloribus repellendus laboriosam voluptatibus maxime. Dolorum exercitationem in enim alias praesentium iure unde inventore! Cumque debitis quo similique, accusantium hic suscipit?',
     technologies: ['HTML', 'CSS', 'Javascript'],
-    projectScope: ['Uber', 'Lead developer', '2018'],
+    projectScope: ['Microverse student', 'Lead developer', '2021'],
     projectSumary:
       ' A smart assistant to make driving more safe, efficient, and funby unlocking your most expensive computer: your car.',
-    liveLink: 'https://benshidanny11.github.io/portforio/home.html',
-    codeLink: 'https://github.com/benshidanny11/portforio',
+    liveLink: 'https://benshidanny11.github.io/todo-list/dist/index.html',
+    codeLink: 'https://github.com/benshidanny11/todo-list',
   },
 ];
 
@@ -78,6 +78,7 @@ projects.forEach((project) => {
 
   const projectImg = document.createElement('img');
   projectImg.src = project.featuredImage;
+  projectImg.width='450'
   projectDiv.appendChild(projectImg);
 
   const descriptionDiv = document.createElement('div');
