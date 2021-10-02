@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   padding: 0;
   margin: 0;
   background-color: #f4f5f7;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-main {
+  min-height: 100vh;
 }
 
 .header {
@@ -42,6 +50,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .inner-intro-container {
@@ -239,8 +248,35 @@ body {
   font-weight: bold;
 }
 
+.btn-modal {
+  color: #6070ff;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 0.4rem 1.4rem;
+  border: 1px solid #6070ff;
+  font-size: 9px;
+  font-weight: bold;
+  margin-left: 1.6rem;
+}
+
+#tool1,
+#tool2,
+#tool3 {
+  font-size: 9px;
+}
+
+.btn-modal:hover {
+  color: #fff;
+  background-color: #6070ff;
+  transition: 1s;
+}
+
 .btn-resume {
   margin-top: 1.5rem;
+}
+
+.mtrem-4 {
+  margin-top: 4rem;
 }
 
 .btn:hover {
@@ -262,6 +298,12 @@ body {
   color: #6070ff;
   font-size: 18px;
   margin-top: 2.5rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .experience {
@@ -335,6 +377,19 @@ body {
   padding: 3rem;
 }
 
+.work-modal {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+}
+
+.icon-btn {
+  margin-left: 1rem;
+  width: 16px;
+  height: 16px;
+}
+
 .aboutme {
   background-color: #fff;
   border-top-right-radius: 2.5rem;
@@ -363,6 +418,7 @@ body {
   display: flex;
   margin-block-start: unset;
   padding-inline-start: unset;
+  justify-content: space-around;
 }
 
 .company .item1 {
@@ -378,6 +434,20 @@ body {
   margin-left: 2rem;
   margin-block-start: unset;
   margin-block-end: unset;
+}
+
+.listitem h3 {
+  color: #172b4d;
+}
+
+.company .item2 h3,
+.company .item1 h3,
+.company .item3 h3 {
+  font-size: 16px;
+}
+
+.item-mar-left {
+  margin-left: 1.5rem;
 }
 
 .tools {
@@ -455,16 +525,29 @@ body {
   margin-top: 0;
 }
 
-.listitem h3 {
-  color: #172b4d;
-}
-
 .me-text {
   display: flex;
   flex-direction: column;
 }
 
-@media only screen and (max-width: 720px) {
+.project-modal img {
+  width: 100%;
+  height: 500px;
+}
+
+#detail1,
+#detail2,
+#detali3 {
+  font-size: 15px;
+}
+
+.separator {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+@media only screen and (max-width: 940px) {
   .menubutton {
     display: block;
   }
@@ -594,5 +677,17 @@ body {
 
   .tools .item {
     font-size: 12px;
+  }
+
+  .ds-block {
+    display: block;
+  }
+
+  .col-fil {
+    width: 100%;
+  }
+
+  .separator {
+    display: block;
   }
 }
