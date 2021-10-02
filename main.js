@@ -48,7 +48,7 @@ const projects = [
     projectSumary:
       '    Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     liveLink: 'https://covid-tracker-by-dannybenshi.herokuapp.com/Rwanda',
-    codeLink: 'https://github.com/benshidanny11/covid-tracker/security/dependabot',
+    codeLink: 'https://github.com/benshidanny11/covid-tracker',
   },
   {
     name: 'Todo list',
