@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 body {
   padding: 0;
@@ -379,23 +376,10 @@ body {
 
 .work-modal {
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  border-radius: 1.5rem;
-}
-
-.icon-btn {
-  margin-left: 1rem;
-  width: 16px;
-  height: 16px;
-}
-
-.aboutme {
-  background-color: #fff;
   border-top-right-radius: 2.5rem;
 }
 
-.aboutme-inner {
+.aboutme-inner{
   padding: 1.5rem 5rem 1rem 5rem;
   margin-top: 5em;
   display: flex;
@@ -677,17 +661,5 @@ body {
 
   .tools .item {
     font-size: 12px;
-  }
-
-  .ds-block {
-    display: block;
-  }
-
-  .col-fil {
-    width: 100%;
-  }
-
-  .separator {
-    display: block;
   }
 }
